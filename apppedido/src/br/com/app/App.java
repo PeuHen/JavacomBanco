@@ -30,29 +30,30 @@ public class App extends Cliente {
 		produto1.setDescricao(campo.nextLine());
 		System.out.println("Qual o valor");
 		produto1.setValor(campo.nextDouble());
-		campo.nextLine();
+		produto1.salvar();
 		
-				
+		/*		
 		System.out.println("insira o segundo produto ");
 		produto2.setDescricao(campo.nextLine());
 		System.out.println("Qual o valor");
-		produto2.setValor(campo.nextDouble());		
-		
+		produto2.setValor(campo.nextDouble());	
+		campo.nextLine();
+		produto2.salvar();
 		
 		System.out.println("insira o terceiro prduto ");
 		produto3.setDescricao(campo.nextLine());
 		System.out.println("Qual o valor");
 		produto3.setValor(campo.nextDouble());
-		
-		
+		produto3.salvar();
+		*/
 		
 		
 		pedido.Cliente = cliente;
 		pedido.numero = 1;
-		
+		/*
 		pedido.produtos.add(produto2);
 		pedido.produtos.add(produto2);
-		pedido.produtos.add(produto3);
+		pedido.produtos.add(produto3);*/
 		pedido.produtos.add(produto1);
 		
 		pedido.mostrarPedido();

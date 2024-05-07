@@ -16,8 +16,12 @@ public class Pedido {
 	
 	
 
-	
-	
+
+
+
+
+
+
 	public void mostrarPedido(){
 	    System.out.println("_______________________________________");
 	    System.out.println("Numero do Pedido: " + numero);
