@@ -18,12 +18,14 @@ public class App extends Cliente {
 		
 		System.out.println("Digite o nome do Cliente: ");
 		cliente.setNome(campo.nextLine());
-		
 		System.out.println("Digite o telefone do cliente ");
 		cliente.setTelefone(campo.nextLine());
-		
 		System.out.println("Digite o email do Cliente: ");
 		cliente.setEmail(campo.nextLine());
+		System.out.println("Digite a idade do Cliente: ");
+		cliente.setIdade(campo.nextInt());
+		cliente.salvar();
+		campo.nextLine();
 		
 		
 		System.out.println("insira o primeiro produto ");
