@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicação | Pedido </title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-black ">
@@ -16,19 +16,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="./pages/clientes.html">Cadastrar Cliente</a>
+            <a class="nav-link active" href="clientes.html">Cadastrar Cliente</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="./pages/pedido.html">Fazer pedido</a>
+            <a class="nav-link active" href="pedido.html">Fazer pedido</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="dados.html">Mostrar pedidos</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./pages/dados.html">Mostrar pedidos</a>
-          </li>
 
           
       </div>
@@ -36,23 +36,27 @@
   </nav>
     <div class="center">
         <h1>
-            Cadastro Produtos
+            Fazer pedido
         </h1>
 
         <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Nome do produto</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira o produto">
-            </div>
+                <label for="exampleInputEmail1">Nome do Cliente</label>
+                <input type="text" class="form-control" id="nome_cliente" placeholder="Nome do cliente">
+              </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Valor produto</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Valor produto">
+              <label for="exampleInputEmail1">Nome do produto</label>
+              <input type="text" class="form-control" id="nome_produto" placeholder="Insira o produto">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Quantidade do produto</label>
               <input type="number" class="form-control" id="quantidade_produto" placeholder="Quantidade produto">
             </div>
-            <button type="submit" class="btn btn-primary" style="margin-left:30%;margin-top: 10%;">Cadastrar</button>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Total R$:</label>
+                <input type="text" class="form-control" id="total_produto" disabled placeholder="Total do pedido ">
+              </div>
+            <button type="submit" class="btn btn-primary" style="margin-left:30%;margin-top: 10%;">Fazer pedido</button>
           </form>
           
 
